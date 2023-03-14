@@ -1,0 +1,18 @@
+proton: ServiceSpec
+
+pipeline:
+  my_sample_pipeline_optional_input: "abc"
+  my_sample_pipeline_required_input: "uselesschange"
+
+instances:
+  - name: "my-ss-instance"
+    environment: "service-sync-integ-env"
+    spec:
+      my_sample_service_instance_optional_input: "BAD"
+      my_sample_service_instance_required_input: "AWFUL"
+  - name: "my-other-ss-instance"
+    environment: "service-sync-integ-env"
+    spec:
+      my_sample_service_instance_optional_input: "thisIsADifferentInstance"
+      my_sample_service_instance_required_input: "ThisInstanceIsNew"
+

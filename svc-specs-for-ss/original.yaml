@@ -1,7 +1,7 @@
 proton: ServiceSpec
 
 pipeline:
-  my_sample_pipeline_optional_input: "abc"
+  my_sample_pipeline_optional_input: "abcdef"
   my_sample_pipeline_required_input: "uselesschange"
 
 instances:

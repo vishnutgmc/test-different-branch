@@ -7,6 +7,3 @@ sync:
             load-test-svc-instance1: 
                 branch: main
                 spec: ./svc-specs-for-ss/original.yaml
-            load-test-svc-instance2: 
-                branch: main
-                spec: ./svc-specs-for-ss/original.yaml

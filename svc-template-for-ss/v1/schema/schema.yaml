@@ -1,0 +1,34 @@
+schema:
+  format:
+    openapi: "3.0.0"
+  pipeline_input_type: "MyPipelineInputType"
+  service_input_type: "MyServiceInstanceInputType"
+
+  types:
+    MyPipelineInputType:
+      type: object
+      description: "Pipeline input properties"
+      required:
+        - my_sample_pipeline_required_input
+      properties:
+        my_sample_pipeline_optional_input:
+          type: string
+          description: "This is a sample input"
+          default: "hello pipeline"
+        my_sample_pipeline_required_input:
+          type: string
+          description: "Another sample input"
+
+    MyServiceInstanceInputType:
+      type: object
+      description: "Service instance input properties"
+      required:
+        - my_sample_service_instance_required_input
+      properties:
+        my_sample_service_instance_optional_input:
+          type: string
+          description: "This is a sample input"
+          default: "hello world"
+        my_sample_service_instance_required_input:
+          type: string
+          description: "Another sample input"

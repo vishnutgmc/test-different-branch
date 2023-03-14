@@ -1,0 +1,49 @@
+Resources:
+  StoreServiceInstanceInputValues:
+    Type: AWS::SSM::Parameter
+    Properties:
+      Type: String
+      Value: "{{service.name}} {{service_instance.name}} {{ service_instance.inputs.my_sample_service_instance_required_input }} {% if service_instance.inputs.my_sample_service_instance_optional_input is defined %}{{ service_instance.inputs.my_sample_service_instance_optional_input }}{% endif %}"
+  StoreEnvironmentOutputValues:
+    Type: AWS::SSM::Parameter
+    Properties:
+      Type: String
+      Value: "Individual environment outputs: {{ environment.outputs.MySampleInputValue }} {{ environment.outputs.MyOtherSampleInputValue }} {% if environment.outputs.AnotherOptionalInputValue is defined %}{{ environment.outputs.AnotherOptionalInputValue }}{% endif %} {% if environment.outputs.MyThirdSampleInputValue is defined %}{{ environment.outputs.MyThirdSampleInputValue }}{% endif %}, SSM environment param value: {{ environment.outputs.MyEnvParameterValue }}"
+
+Outputs:
+  MyServiceInstanceParameter:
+    Value: !GetAtt StoreServiceInstanceInputValues.Value
+
+  MyServiceInstanceRequiredInputValue:
+    Value: "{{ service_instance.inputs.my_sample_service_instance_required_input }}"
+  {% if service_instance.inputs.my_sample_service_instance_optional_input is defined %}
+  MyServiceInstanceOptionalInputValue:
+    Value: "{{ service_instance.inputs.my_sample_service_instance_optional_input }}"
+  {% endif %}
+
+  # Outputs defined in all simple-env-template sample templates
+  MyEnvironmentOutputsParameter:
+    Value: !GetAtt StoreEnvironmentOutputValues.Value
+  MyEnvironmentOptionalOutputValue:
+    Value: "{{ environment.outputs.MySampleInputValue }}"
+  MyEnvironmentRequiredOutputValue:
+    Value: "{{ environment.outputs.MyOtherSampleInputValue }}"
+
+  # Output defined in simple-env-template/added-optional-input-field sample template
+{% if environment.outputs.AnotherOptionalInputValue is defined %}
+  MyEnvironmentAnotherOptionalOutputValue:
+    Value: "{{ environment.outputs.AnotherOptionalInputValue }}"
+{% endif %}
+
+  # Output defined in simple-env-template/added-required-input-field sample template
+{% if environment.outputs.MyThirdSampleInputValue is defined %}
+  MyEnvironmentAnotherRequiredOutputValue:
+    Value: "{{ environment.outputs.MyThirdSampleInputValue }}"
+{% endif %}
+
+{% if service_instance.components.default.outputs is defined %}
+{% for key, value in service_instance.components.default.outputs.items() %}
+  {{ key }}:
+    Value: "{{ value }}"
+{% endfor %}
+{% endif %}

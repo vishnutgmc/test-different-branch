@@ -1,0 +1,123 @@
+sync:
+    services:
+        load-test-svc:
+            load-test-svc-instance1: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance2: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance3: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance4: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance5: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance6: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance7: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance8: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance9: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance10: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance11: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance12: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance13: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance14: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance15: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance16: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance17: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance18: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance19: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance20: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance21: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance22: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance23: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance24: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance25: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance26: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance27: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance28: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance29: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance30: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance31: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance32: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance33: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance34: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance35: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance36: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance37: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance38: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance39: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml
+            load-test-svc-instance40: 
+                branch: main
+                spec: ./svc-specs-for-ss/original_20_instances.yaml

@@ -5,7 +5,7 @@ pipeline:
   my_sample_pipeline_required_input: "uselesschange"
 
 instances:
-  - name: "load-test-svc-instance-i"
+  - name: "load-test-svc-instance-j"
     environment: "load-test-env"
     spec:
       my_sample_service_instance_optional_input: "BAD"

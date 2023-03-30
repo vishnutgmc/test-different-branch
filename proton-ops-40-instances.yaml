@@ -1,6 +1,6 @@
 sync:
     services:
-        load-test-svc:
+        load-test-svca3:
             load-test-svc-instance1: 
                 branch: dev40
                 spec: ./svc-specs-for-ss/original.yaml

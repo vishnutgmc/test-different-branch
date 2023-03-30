@@ -1,6 +1,6 @@
 sync:
     services:
-        load-test-svc333:
+        load-test-svc3333:
             load-test-svc-instance-a: 
                 branch: deva
                 spec: ./svc-specs-for-ss/original.yaml
